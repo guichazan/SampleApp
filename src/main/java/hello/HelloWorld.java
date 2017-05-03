@@ -5,13 +5,13 @@ import totalcross.ui.Toast;
 import totalcross.ui.Button;
 
 public class HelloWorld extends MainWindow {
-	@Override
+    @Override
     public void initUI() {
 	Button greetings = new Button("Greetings");
-        Greeter greeter = new Greeter();
-        add(greetings, CENTER, CENTER);
-        greetings.addPressListener((e) -> {
-        	Toast.show(greeter.sayHello(), 1000);
-        });
+	Greeter greeter = new Greeter();
+	add(greetings, CENTER, CENTER);
+	greetings.addPressListener((e) -> {
+	    Toast.show(greeter.sayHello(), 1000);
+	});
     }
 }
