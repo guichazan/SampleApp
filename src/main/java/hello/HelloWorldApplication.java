@@ -5,6 +5,7 @@ import totalcross.TotalCrossApplication;
 
 public class HelloWorldApplication {
 	public static void main(String[] args) {
-		TotalCrossApplication.run(HelloWorld.class, "/r", "ACTIVATION_KEY", "/scr", "android", "/fontsize", "20", "/fingertouch");
+		String tcKey = System.getenv("TOTALCROSS_KEY");
+		TotalCrossApplication.run(HelloWorld.class, "/r", tcKey, "/scr", "android", "/fontsize", "20", "/fingertouch");
 	}
 }
