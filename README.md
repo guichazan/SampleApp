@@ -1,4 +1,4 @@
-# HelloTC
+# SampleApplication
 
 Example to help you create your first app with TotalCross Platform!
 
